@@ -51,8 +51,8 @@ kotlin("kapt") version "1.9.22"
 
 # Features
 
-<img src="image.png" width="50" height="50"> 
-<img src="image-1.png" width="50" height="50">
+<img src="image.png" width="150" height="150" style="display : flex"> 
+<img src="image-1.png" width="150" height="150" style="display : flex">
 
 - User can add their contacts :
   [insert](insert.webm)
