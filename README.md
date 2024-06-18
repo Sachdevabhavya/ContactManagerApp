@@ -51,7 +51,8 @@ kotlin("kapt") version "1.9.22"
 
 # Features
 
-![app_image](image.png |width=50|height=50) ![app_with_contacts](image-1.png |width=50|height=50)
+<img src="image.png" width="50" height="50"> 
+<img src="image-1.png" width="50" height="50">
 
 - User can add their contacts :
   [insert](insert.webm)
