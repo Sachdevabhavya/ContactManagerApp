@@ -51,18 +51,30 @@ kotlin("kapt") version "1.9.22"
 
 # Features
 
-<img src="image.png" width="150" height="150" style="display : flex"> 
-<img src="image-1.png" width="150" height="150" style="display : flex">
+<p align="center">
+  <img src="image.png" width="250" height="250" style="display: inline-block; margin: 0 10px;">
+  <img src="image-1.png" width="250" height="250" style="display: inline-block; margin: 0 10px;">
+</p>
+
 
 - User can add their contacts :
-  [insert](insert.webm)
+  <video width="320" height="240" controls>
+  <source src="insert.webm" type="video/mp4">
+</video>
+
 
 - User can update the existing contact
-  [update](update.webm)
+  <video width="320" height="240" controls>
+  <source src="update.webm" type="video/mp4">
+</video>
 
 - User can delete any contact
-  [delete](delete.webm)
+  <video width="320" height="240" controls>
+  <source src="delete.webm" type="video/mp4">
+</video>
 
-[app](app.webm)
+<video width="320" height="240" controls>
+  <source src="app.webm" type="video/mp4">
+</video>
 
 - The contacts will remain stored even if the app is stopped , because the data is stored using a ROOM database
