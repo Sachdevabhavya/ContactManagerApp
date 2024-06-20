@@ -20,7 +20,7 @@
 
             android:id="@+id/constraint2"
             android:layout_width="0dp"
-            android:layout_height="150dp"
+            android:layout_height="180dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -43,9 +43,17 @@
                 android:layout_height="wrap_content"
                 android:hint="Enter Your Email"
                 app:layout_constraintStart_toStartOf="@+id/nameET"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/nameET"
                 app:layout_constraintTop_toBottomOf="@+id/nameET"/>
+
+            <EditText
+                android:text="@={contactViewModel.inputPhone}"
+                android:id="@+id/phoneET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Phone No"
+                app:layout_constraintStart_toStartOf="@+id/nameET"
+                app:layout_constraintTop_toBottomOf="@+id/emailET"/>
 
             <Button
                 android:onClick="@{()->contactViewModel.saveOrUpdate()}"
@@ -53,7 +61,6 @@
                 android:id="@+id/btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="42dp"
                 android:layout_marginBottom="5dp"
                 app:layout_constraintBottom_toTopOf="@+id/btn2"
