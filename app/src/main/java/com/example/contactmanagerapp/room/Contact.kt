@@ -11,7 +11,8 @@ data class Contact(
 //    @ColumnInfo(name = "contact_name")
     var contact_name : String,
 
+    var contact_email : String,
 
-    var contact_email : String
+    var contact_phone : String
 )
 
