@@ -25,6 +25,9 @@ class ContactViewModel(private val repository: ContactRepository) : ViewModel() 
     val inputEmail = MutableLiveData<String?>()
 
     @Bindable
+    val inputPhone = MutableLiveData<String?>()
+
+    @Bindable
     val saveOrUpdateButtonText = MutableLiveData<String>()
 
     @Bindable
@@ -45,6 +48,7 @@ class ContactViewModel(private val repository: ContactRepository) : ViewModel() 
         //resetting the button and the fields
         inputName.value = null
         inputEmail.value = null
+        inputPhone.value = null
         isUpdateOrDelete = false
         saveOrUpdateButtonText.value = "save"
         clearAllOrDeleteButtonText.value = "Clear All"
@@ -56,6 +60,7 @@ class ContactViewModel(private val repository: ContactRepository) : ViewModel() 
         //resetting the button and the fields
         inputName.value = null
         inputEmail.value = null
+        inputPhone.value = null
         isUpdateOrDelete = false
         saveOrUpdateButtonText.value = "save"
         clearAllOrDeleteButtonText.value = "Clear All"
@@ -70,15 +75,19 @@ class ContactViewModel(private val repository: ContactRepository) : ViewModel() 
         if(isUpdateOrDelete){
             contactToUpdateOrDelete.contact_name = inputName.value!!
             contactToUpdateOrDelete.contact_email = inputEmail.value!!
+            contactToUpdateOrDelete.contact_phone = inputPhone.value!!
             update(contactToUpdateOrDelete)
         }else{
             val name = inputName.value!!
             val email = inputEmail.value!!
+            val phone = inputPhone.value!!
 
-            insert(Contact(0 , name , email))
+            insert(Contact(0 , name , email , phone))
 
+            inputPhone.value = null
             inputEmail.value = null
             inputName.value = null
+
         }
     }
 
@@ -94,6 +103,7 @@ class ContactViewModel(private val repository: ContactRepository) : ViewModel() 
     fun initUpdateAndDelete(contact: Contact){
         inputName.value = contact.contact_name
         inputEmail.value = contact.contact_email
+        inputPhone.value = contact.contact_phone
         isUpdateOrDelete = true
         contactToUpdateOrDelete = contact
         saveOrUpdateButtonText.value = "Update"
