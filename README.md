@@ -74,18 +74,21 @@ buildFeatures{
   <img src="image-1.png" width="250" height="250" style="display: inline-block; margin: 0 10px;">
 </p>
 
-- User can add their contacts :
-  <img src="insert.gif" width="400" height="300">
+1. User can add their contacts :
+   <br>
+   <img src="insert.gif" width="400" height="300">
 
-- User can update the existing contact :
-  <img src="update.gif" width="400" height="300">
+2. User can update the existing contact :
+   <br>
+   <img src="update.gif" width="400" height="300">
 
-- User can delete any contact :
-  <img src="delete.gif" width="400" height="300">
+3. User can delete any contact :
+   <br>
+   <img src="delete.gif" width="400" height="300">
 
-- The contacts will remain stored even if the app is stopped , because the data is stored using a ROOM database
-
-<img src="app.gif" width="400" height="300">
+4. The contacts will remain stored even if the app is stopped , because the data is stored using a ROOM database
+   <br>
+   <img src="app.gif" width="400" height="300">
 
 # Android Verion
 
