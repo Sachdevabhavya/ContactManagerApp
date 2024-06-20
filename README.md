@@ -75,7 +75,7 @@ buildFeatures{
 </p>
 
 - User can add their contacts :
-  <img src="insert.gif" width="48">
+  <img src="insert.gif" width="400" height="300">
 
 - User can update the existing contact :
   <img src="update.gif" width="400" height="300">
